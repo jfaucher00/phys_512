@@ -45,6 +45,31 @@ errors = paraboloid([x, y], x0, y0, z0, a) - z
 mean = np.mean(errors)
 std  =np.std(errors) #Our error on z if the noise is gaussian
 
+if True: #Toggle to see 2D residuals
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+    ax.scatter(x, y, errors, ".")
+    plt.title("Residuals along the x-Axis", fontsize = 16)
+    plt.ylabel("y [mm]", fontsize = 14)
+    plt.xlabel("x [mm]", fontsize = 14)
+    plt.show()
+    
+    plt.plot(x, errors, "o")
+    plt.axhline()
+    plt.title("Residuals along the x-Axis", fontsize = 16)
+    plt.ylabel("Residuals", fontsize = 14)
+    plt.xlabel("x [mm]", fontsize = 14)
+    plt.grid()
+    plt.show()
+    
+    plt.plot(y, errors, "o")
+    plt.axhline()
+    plt.title("Residuals along the y-Axis", fontsize = 16)
+    plt.ylabel("Residuals", fontsize = 14)
+    plt.xlabel("y [mm]", fontsize = 14)
+    plt.grid()
+    plt.show()
+
 gaussian = lambda x, mu, sigma, A: A*np.exp(-((x-mu)/sigma)**2)
 x = np.linspace(-10, 15)
 
