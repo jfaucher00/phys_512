@@ -1,0 +1,8 @@
+The parameters yielded a chi^2 of 15268 with a standard deviation of 175. 
+This is 73 sigmas away from the number of degrees of freedom. Hence, it is
+not an acceptable fit.
+
+The second set of parameters yields a chi^2 of 3272 with a std of 81. This
+value is 10 sigmas away from the number of DOF which is not ideal, but way
+it shows that these parameters are way better guess than the first set.
+ 

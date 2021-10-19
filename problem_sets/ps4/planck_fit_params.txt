@@ -1,0 +1,18 @@
+pars = [6.68774833e+01, 2.21252638e-02, 1.20618768e-01, 6.78548660e-02, 2.15657127e-09, 9.66523355e-01]
+
+errs = [4.10860088e-01, 1.90139554e-04, 1.10091034e-03, 3.89455934e-02, 1.63833007e-10, 6.51031187e-03]
+
+With a better formating:
+
+H_0 = 66.8(4)
+Obh2= 2.21(2)
+Och2= 1.21(1)
+tau = 7(4)    <-Major red flag here
+A_s = 2.2(2)
+n_s = 9.67(7)
+
+
+chi^2 = 2578 +/- 72
+
+This value of chi^2 is almost on point since the number of dof is close almost within a sigma from the
+chi^2 value. 
